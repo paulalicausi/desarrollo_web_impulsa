@@ -1,24 +1,132 @@
+/*
+* Estilos base
+*/
+
 body {
     background-color: antiquewhite;
+    margin-top: 120px;
 }
 
+img {
+    max-width: 100%;
+}
+
+p {
+    color: black;
+    font-size: 15px;
+}
+
+/*
+* Clases comunes
+*/
+
+.texto-blanco {
+    color: white;
+}
+
+/*
+* Header
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    padding-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+header .logo {
+    width: 250px;
+}
+
+/*
+* Presentacion
+*/
+ 
 #presentacion {
     background-image: url('img/banner.jpg');
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #presentacion h1 {
-    color: blueviolet;
+    color: white;
+    text-align: center;
     font-size: 20px;
+    position: relative;
 }
 
 #presentacion h1 strong {
-    background-color: gray;
+    background-color: #010101;
 }
+
+#presentacion .cuadrado {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+}
+
+/*
+* Curso
+*/
+
+#curso h2 {
+    background-color: #63d196;
+    margin: 20px auto; /* Top-bottom 20px left-right auto para que se centre */
+    text-align: center;
+    width: 200px;
+}
+
+#curso img {
+    width: 100px;
+}
+
+#curso .contenedor-iconos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*
+* Programa
+*/
 
 #programa {
     background-color: #63d196;
 }
+
+
+
+
+
+
