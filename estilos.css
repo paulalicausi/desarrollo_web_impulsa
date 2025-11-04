@@ -4,7 +4,7 @@
 
 body {
     background-color: antiquewhite;
-    margin-top: 120px;
+    margin: 120px 0 0 0;
 }
 
 img {
@@ -16,12 +16,42 @@ p {
     font-size: 15px;
 }
 
+section {
+    padding: 30px 0;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 /*
 * Clases comunes
 */
 
 .texto-blanco {
     color: white;
+}
+
+/*
+* Newsletter
+*/
+
+#newsletter {
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 250px);
+    top: 700px;
+    display: none; /* Agregué display:none para que no aparezca */
 }
 
 /*
@@ -58,6 +88,11 @@ header nav ul li a {
     text-decoration: none;
 }
 
+header nav ul li a:hover {
+    color: #63d196;
+    text-decoration: underline;
+}
+
 header .logo {
     width: 250px;
 }
@@ -81,7 +116,7 @@ header .logo {
 #presentacion h1 {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 80px;
     position: relative;
 }
 
@@ -117,6 +152,18 @@ header .logo {
     justify-content: space-evenly;
 }
 
+#curso button {
+    background-color: #63d196;
+    color: black;
+    font-size: 20px;
+    display: block;
+    margin: 50px auto 0;
+    padding: 10px 0;
+    width: 300px;
+    border-radius: 20px;
+    border: 0;
+}
+
 /*
 * Programa
 */
@@ -124,6 +171,51 @@ header .logo {
 #programa {
     background-color: #63d196;
 }
+
+#programa .contenedor-programa {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#programa .contenedor-programa div {
+    width: 45%;
+    padding: 0 20px;
+}
+
+#programa .contenedor-programa div h3,
+#programa .contenedor-programa div p {
+    color: white;
+    text-align: center;
+}
+
+/*
+* Footer
+*/
+footer {
+    display: flex;
+    padding: 30px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .social ul {
+    display: flex;
+    list-style: none;
+}
+
+footer p {
+    text-align: right;
+}
+
+footer .mail {
+    color: #63d196;
+}
+
+
+
 
 
 
