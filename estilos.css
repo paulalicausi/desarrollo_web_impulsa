@@ -1,10 +1,17 @@
 /*
+* Fuentes
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+
+/*
 * Estilos base
 */
 
 body {
     background-color: antiquewhite;
     margin: 120px 0 0 0;
+    font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -14,6 +21,14 @@ img {
 p {
     color: black;
     font-size: 15px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1, h2, h3 {
+    font-family: "Bree Serif", serif;
 }
 
 section {
@@ -86,6 +101,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
+    color: black;
 }
 
 header nav ul li a:hover {
@@ -95,6 +111,43 @@ header nav ul li a:hover {
 
 header .logo {
     width: 250px;
+}
+
+header button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    header nav {
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        display: none;
+    }
+    
+    header nav ul {
+       flex-direction: column;
+    }
+
+    header nav ul li {
+        text-align: right;
+        margin-bottom: 30px;
+        padding-right: 30px;
+    }
+
+    header button {
+        background-color: transparent;
+        border: 0;
+        display: block;
+    }
+
+    header button i {
+        font-size: 30px;
+    }
+
 }
 
 /*
@@ -130,6 +183,14 @@ header .logo {
     background-color: black;
     position: absolute;
     opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+
+    #presentacion h1 {
+        font-size: 50px;
+    }
+    
 }
 
 /*
@@ -191,6 +252,18 @@ header .logo {
     text-align: center;
 }
 
+@media (max-width: 900px) {
+
+    #programa .contenedor-programa {
+        display: block;
+    }
+
+    #programa .contenedor-programa div {
+        width: 100%;
+    }
+
+}
+
 /*
 * Footer
 */
@@ -206,12 +279,38 @@ footer .social ul {
     list-style: none;
 }
 
+footer .social ul i {
+    font-size: 30px;
+    color: #63d196;
+}
+
+footer .social ul a:hover i {
+    opacity: .5;
+}
+
 footer p {
     text-align: right;
 }
 
 footer .mail {
     color: #63d196;
+}
+
+@media (max-width: 768px) {
+
+    footer {
+        display: block;
+    }
+
+    footer .social ul {
+        padding-left: 0;
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    
 }
 
 
