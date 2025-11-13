@@ -1,4 +1,5 @@
 /**
+ * Clase 7
  * Ejercicio 1
  */
 
@@ -85,4 +86,115 @@ function sumarDosNum(num1, num2) {
 let resultado = sumarDosNum(2, 5);
 console.log("El resultado es: " + resultado);
 
+/**
+ * Clase 8
+ * Ejercicio 1
+ */
 
+function crearLargoNombre(nombre) {
+    return nombre.length;
+}
+
+let largoNombre = crearLargoNombre("Ana");
+console.log("El nombre tiene " + largoNombre + " letras");
+
+function cambiarColor() {
+    let texto = document.querySelector("h1");
+    if(texto) {
+        texto.style.color = "lime";
+    }    
+}
+
+/*
+Solucion alternativa a CambiarColor()
+
+let btn = document.querySelector("#btnColor");
+btn.addEventListener("click", function() {
+    console.log("Add event listener");
+    let texto = document.querySelector("h1");
+    texto.style.color = "lime";
+});
+*/
+
+let vegetal = "lechuga";
+
+switch (vegetal) {
+    case "brocoli":
+        color = "Verde";
+        break;
+    case "pimiento":
+        color = "rojo";
+        break;
+    default:
+        color = "blanco";
+        break;
+}
+
+/*
+El switch de arriba es una simplificación de este if:  */
+if(vegetal == "lechuga") {
+    let color =  "verde";
+} else if(vegetal == "pimiento") {
+    let color = "rojo";
+} else {
+    let color = "blanco";
+}
+
+
+/**
+ * Ejercicio 2
+ */
+
+function crearListaSuper() {
+    let listaSuper = [
+        "Frutas",
+        "Verduras",
+        "Jabon", 
+        "Chocolates", 
+        "Cereales",
+        "Pan"
+    ];
+
+    let articulo = prompt("Ingresá un nuevo artículo:");
+
+    if(listaSuper.includes(articulo)) {
+        alert("El artículo ya está en la lista!");
+    } else {
+        listaSuper.push(articulo);
+        alert(listaSuper);
+    }
+}
+
+/**
+ * Ejercicio 3
+ */
+
+let fecha = new Date();
+let hoy = fecha.getDay();
+
+switch (hoy) {
+    case 0:
+        dia = "Domingo";        
+        break;
+    case 1:
+        dia = "Lunes";        
+        break;
+    case 2:
+        dia = "Martes";        
+        break;
+    case 3:
+        dia = "Miércoles";        
+        break;
+    case 4:
+        dia = "Jueves";        
+        break;
+    case 5:
+        dia = "Viernes";        
+        break;
+        
+    default:
+        dia = "Sábado";
+        break;
+}
+
+console.log("Hoy es: " + dia);
