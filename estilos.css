@@ -125,6 +125,9 @@ header button {
         left: 0;
         top: 120px;
         width: 100%;
+    }
+
+    .oculto {
         display: none;
     }
     

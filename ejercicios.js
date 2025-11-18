@@ -198,3 +198,44 @@ switch (hoy) {
 }
 
 console.log("Hoy es: " + dia);
+
+/**
+ * Clase 9
+ * Ejercicios clase 8
+ */
+
+function esCoordenadaRefugio(num) {
+    
+    if(num > 0 && (num % 2 === 0 || num % 3 === 0) && num != 15 && num != 5) {
+        console.log("En esta coordenada hay un refugio!");
+    }
+}
+
+let objetos = ["Varita", "Libro", "Lechuza", "Caldero"];
+
+objetos.forEach(function(objeto) {
+
+ console.log(objeto);
+
+});
+
+/**
+ * Ejercicio 1
+ */
+let pasos = 100;
+
+while(pasos > 0) {
+    if(pasos === 1) {
+        console.log("Solo falta " + pasos + " paso por caminar");
+    }else {
+        console.log("Solo faltan " + pasos + " pasos por caminar");
+    }
+    pasos--;
+}
+
+
+
+
+
+
+
